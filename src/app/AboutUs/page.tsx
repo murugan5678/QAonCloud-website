@@ -1,0 +1,51 @@
+import React from 'react';
+
+import ServicePageHeader from '@/components/ServicePage/Header/ServicePageHeader';
+import classes from "./page.module.css"
+import QualityAssurance from '@/components/ServicePage/QualityAssurance/QualityAssurance';
+import QualityTestingServices from '@/components/ServicePage/QualityServices/QualityServices';
+import { ContentWrapper } from '@/components/Common/ContentWrapper/ContentWraper';
+import CaseStudiesSection from '@/components/ServicePage/CaseStudiesSection/CaseStudiesSection';
+import FeatureLineCard from '@/components/ServicePage/GreenCardsSection/GreenLineCard';
+import GreenCards from '@/components/ServicePage/GreenCardsSection/GreenLineCard';
+import ServiceEfficiency from '@/components/ServicePage/UnmatchedExpertise/UnmatchedExpertise';
+import { SmoothReleases } from '@/components/ServicePage/SmoothReleases/SmoothReleases';
+import { Banner } from '@/components/Common/Banner/Banner';
+import FAQs from '@/components/ServicePage/FAQS/FAQs';
+import AboutUsHeader from '@/components/AboutUS/AboutUsHeader';
+import AboutUsBuiltBy from '@/components/AboutUS/AboutUsBuiltBy';
+import AboutUsApproach from '@/components/AboutUS/AboutUsApproach';
+import AboutUsOutside from '@/components/AboutUS/AboutUsOutside';
+function AboutUs() {
+  return (
+    <div>
+      <div className={classes.container}>
+        <div className={classes.pageContent}>
+          <div className={classes.homeHeroBg}> 
+            <AboutUsHeader />
+          </div>
+          <AboutUsBuiltBy />
+          <AboutUsApproach />
+          <AboutUsOutside />
+            <ContentWrapper>
+                <Banner
+                  title="We’re here to help you ship confidently, with every release."
+                 
+                  description="We’re fast, thorough, and great at what we do. Let our experts spot bugs and vulnerabilities while you focus on what you do best. "
+                   
+                  ctaLabel="Talk to Qaoncloud"
+                  ctaHref="/how-we-work"
+                />
+            </ContentWrapper>
+            
+           
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  );
+}
+
+export default AboutUs;

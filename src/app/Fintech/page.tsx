@@ -27,7 +27,7 @@ export default function page() {
                   highlight="costly"
                   description="Other industries are more forgiving when it comes to bugs. But not FinTech."
                   subDescription="Because in FinTech, a bug isn't just a mistake. It's a regulatory incident. A glaring headline. An act of non-compliance.  
-That’s why most FinTech teams are forced to choose between compliance and speed. "
+                                  That’s why most FinTech teams are forced to choose between compliance and speed. "
                   marginBottom={2}
                 />
             <ContentWrapper>

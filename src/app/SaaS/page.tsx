@@ -66,6 +66,43 @@ export default function page() {
                     // },
                   ]}
                 />
+                <SmoothReleases
+                  title="Here’s how we work with "
+                  highlight="Saas teams"
+                  features={[
+                    {
+                      title: "The discovery call",
+                      description:
+                        "We’ll start with a 30-minute conversation, no sales pitch, no fancy decks. We’ll understand your product, discuss your release cadence, and see how we can put an end to QA slowing you down. ",
+                      icon: "star",
+                    },
+                    {
+                      title: "A focused Pilot engagement",
+                      description:
+                        "Most teams start with a focused 1-month pilot, depending on the highest-priority surface. You'll soon see your releases are 40% faster, with no added anxiety.",
+                      icon: "user",
+                    },
+                    {
+                      title: "We’ll scale with you",
+                      description:
+                        "We’ll grow with you as your product grows - more surfaces, more test types, more coverage. One thing remains constant, the diligent team that knows your product.",
+                      icon: "circle",
+                    },
+                    // {
+                    //   title: "Value for Money",
+                    //   description:
+                    //     "Unmatched, high-level QA expertise at a fraction of the cost, ensuring accuracy, speed, and reliability",
+                    //   icon: "arrow",
+                    // },
+                    // {
+                    //   title: "Tailored to your needs.",
+                    //   description:
+                    //     "Ensuring products are intuitive, user-friendly, with user-oriented functionalities, reducing churn.",
+                    //   icon: "arrow",
+                    // },
+                  ]}
+                />
+                
                 <QualityTestingServices title="AI-accelerated QA that "
                   highlight="keeps up with your cadence."
                   services={[

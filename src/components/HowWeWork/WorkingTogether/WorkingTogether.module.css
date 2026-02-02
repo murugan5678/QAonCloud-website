@@ -1,0 +1,273 @@
+.section {
+  position: relative;
+  margin-bottom: 0rem;
+  overflow: hidden;
+  margin-top: var(--section-header-margin);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 600px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(59, 130, 246, 0.15) 0%,
+    rgba(59, 130, 246, 0.10) 35%,
+    rgba(59, 130, 246, 0.05) 60%,
+    transparent 80%
+  );
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(60px);
+}
+
+.section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  font-size: 1.125rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.listItem:last-child {
+  margin-bottom: 0;
+}
+
+.bullet {
+  color: #3b82f6;
+  font-weight: bold;
+  margin-right: 12px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.header_para{
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffff;
+    margin-bottom: 2rem;
+}
+
+.buttonContainer{
+    margin-top: 2rem;
+}  
+
+.image {
+    width: 400px; /* Increased image width */
+    height: 20%;
+}
+
+.image img {
+   width: 100%;
+    height: 100%; /* Make it fill the container */
+    object-fit: cover; /* Crop to maintain aspect ratio */
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .cardsContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .card {
+    padding: 30px;
+  }
+  
+  .cardTitle {
+    font-size: 1.375rem;
+  }
+  
+  .listItem {
+    font-size: 1rem;
+  }
+  
+  .section {
+        padding: 2rem;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    
+    .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .header_para {
+        display: none;
+    }
+    .content p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .buttonContainer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .image {
+        width: 60%; /* Reduced from 80% */
+        max-width: 280px; /* Reduced from 350px */
+    }
+
+    .image img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 20px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .card {
+    padding: 24px;
+  }
+  
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+  
+  .listItem {
+    font-size: 0.9375rem;
+  }
+  
+  .section {
+        padding: 1.5rem;
+    }
+
+    .header_para {
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .image {
+        width: 70%;
+        max-width: 250px; /* Further reduced */
+    }
+}
+
+@media (max-width: 480px) {
+  .section {
+        padding: 1rem;
+    }
+
+    .header_para {
+        font-size: 16px;
+    }
+
+    .image {
+        width: 80%;
+        max-width: 220px; /* Even smaller for mobile */
+    }
+}

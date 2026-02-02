@@ -1,0 +1,261 @@
+.section {
+  padding: 0;
+  background: none;
+  position: relative;
+  margin-bottom: 0rem;
+  overflow: hidden;
+  margin-top: var(--section-header-margin);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 600px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(59, 130, 246, 0.15) 0%,
+    rgba(59, 130, 246, 0.10) 35%,
+    rgba(59, 130, 246, 0.05) 60%,
+    transparent 80%
+  );
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(60px);
+}
+
+.section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phasesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.phaseCard {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  border-radius: 16px;
+  padding: 32px;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.phaseCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.phaseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.phaseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.phaseTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+.duration {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.phaseContent {
+  position: relative;
+  z-index: 1;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  font-size: 0.9375rem;
+  color: #e2e8f0;
+  line-height: 1.5;
+}
+
+.listItem:last-child {
+  margin-bottom: 0;
+}
+
+.bullet {
+  color: #3b82f6;
+  font-weight: bold;
+  margin-right: 8px;
+  font-size: 1rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .phasesContainer {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 700px;
+  }
+  
+  .phaseCard {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 20px;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+  }
+  
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .phaseCard {
+    padding: 24px;
+  }
+  
+  .phaseTitle {
+    font-size: 1.375rem;
+  }
+  
+  .duration {
+    font-size: 0.8125rem;
+    padding: 4px 10px;
+  }
+  
+  .listItem {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 20px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .phaseCard {
+    padding: 20px;
+  }
+  
+  .phaseHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .phaseTitle {
+    font-size: 1.25rem;
+  }
+  
+  .sectionTitle {
+    font-size: 0.9375rem;
+  }
+  
+  .listItem {
+    font-size: 0.8125rem;
+  }
+}

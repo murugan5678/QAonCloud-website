@@ -13,6 +13,7 @@ import PartnershipSection from "@/components/HomePage/PartnerTestingSection/Part
 import CaseStudiesSection from "@/components/HomePage/CaseStudiesSection/CaseStudies";
 import PartnerSection from "@/components/HomePage/PartnerSection/PartnerSection";
 import { ContentWrapper } from "@/components/Common/ContentWrapper/ContentWraper";
+import HowWedeliver from "@/components/HomePage/HowDoWeDeliver/Howwedeliver";
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
               
               <PartnerSection />
               <ContentWrapper> 
+                <HowWedeliver />
                 <TestingServices />
               </ContentWrapper>
               

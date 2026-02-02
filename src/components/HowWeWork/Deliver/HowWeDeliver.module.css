@@ -1,0 +1,139 @@
+.section {
+  position: relative;
+  margin-bottom: 0rem;
+  overflow: hidden;
+  margin-top: var(--section-header-margin);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 600px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(59, 130, 246, 0.15) 0%,
+    rgba(59, 130, 246, 0.10) 35%,
+    rgba(59, 130, 246, 0.05) 60%,
+    transparent 80%
+  );
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(60px);
+}
+
+.section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.content {
+  max-width: 650px;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 24px 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+.description {
+  font-size: 1.375rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0 0 32px 0;
+}
+
+.ctaButton {
+  margin-top: 2rem;
+}
+
+.image {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 968px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .content {
+    max-width: 700px;
+  }
+  
+  .image {
+    max-width: 400px;
+  }
+  
+  .ctaButton {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 20px;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    font-size: 1.125rem;
+  }
+  
+  .image {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 32px 20px;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .image {
+    max-width: 300px;
+  }
+}
