@@ -23,10 +23,11 @@ export default function page() {
             </div> 
             <ClientSlider />
             <QualityAssurance
-                  title="The Need for "
-                  highlight="QA in Fintech"
-                  description="So, in order to stay secure and compliant, ensuring no mistakes are made by testing thoroughly is essential. "
-                  subDescription="Be it payments, digital channels, credit services, digital core, commercial, corporate banking, investment banking, or trade finance, we’ve got you covered!"
+                  title="In Fintech, mistakes can be"
+                  highlight="costly"
+                  description="Other industries are more forgiving when it comes to bugs. But not FinTech."
+                  subDescription="Because in FinTech, a bug isn't just a mistake. It's a regulatory incident. A glaring headline. An act of non-compliance.  
+That’s why most FinTech teams are forced to choose between compliance and speed. "
                   marginBottom={2}
                 />
             <ContentWrapper>
@@ -131,33 +132,38 @@ export default function page() {
             </ContentWrapper>
             
               <FAQs
-                title="Questions we're frequently asked."
-                highlight="(FAQs)"
+                title="Questions FinTech teams ask"
+                highlight="us"
                 faqs={[
                   {
-                    question: "How does QAonCloud ensure compliance with financial regulations while testing?",
+                    question: "How fast can you get started?",
                     answer:
-                      "We're all-rounders! We've worked with a wide variety of customers across all sectors. We are working with more clients in the BFSI, SaaS and Healthcare sectors, but we also have clients in eCommerce, Luxury, and Pharmaceutical sectors.",
+                      "Most teams are up and running within 2-3 weeks. We start with a discovery call to understand your product and compliance requirements, then move into a focused pilot engagement.",
                   },
                   {
-                    question: "What types of testing services do you offer?",
+                    question: "Do you understand [specific regulation]?",
                     answer:
-                      "We provide comprehensive testing services including functional testing, performance testing, security testing, automation testing, and more. Our solutions are tailored to meet your specific needs.",
+                      "We've worked with PCI-DSS, SOC 2 Type II, PSD2, state money transmitter requirements, GDPR, and more. If there's a regulation we haven't encountered, we'll tell you upfront, and we learn about it fast.",
                   },
                   {
-                    question: "How quickly can you start testing our project?",
+                    question: "What if we already have some QA in place?",
                     answer:
-                      "We can typically start within 24–48 hours after project kickoff. Our onboarding process is streamlined to get your testing up and running quickly.",
+                      "We don’t expect you to change your processes, we integrate into your way of work. Most clients start by handing us their biggest pain point (compliance testing, regression suites, or a specific product surface) and expand from there.",
                   },
                   {
-                    question: "Do you provide both manual and automated testing?",
+                    question: "How do you handle sensitive test data?",
                     answer:
-                      "Yes, we offer both manual and automated testing solutions. Our team will help you determine the best approach based on your project requirements and budget.",
+                      "We use synthetic test data generation, so real customer data is never exposed. This keeps your compliance with data privacy regulations in check, removing a major security risk from your testing process.",
                   },
                   {
-                    question: "What makes QAonCloud different from other testing providers?",
+                    question: 'What does "40% faster" actually mean?',
                     answer:
-                      "We combine deep expertise with flexible engagement models, competitive pricing, and a strong commitment to quality. Our team works as an extension of your in-house team.",
+                      "If traditional QA takes 12 months, we’ll do it in 7. We save a lot of time with our AI handling repetitive work (test generation, execution, data creation), letting our engineers focus on judgment calls and edge cases.",
+                  },
+                  {
+                    question: 'How does pricing work?',
+                    answer:
+                      "We typically work on monthly engagements starting with a focused pilot engagement. Pricing depends entirely on the scope of work and complexity involved.",
                   },
                 ]}
               />
@@ -166,11 +172,11 @@ export default function page() {
               <ContentWrapper>
                 
                 <Banner
-                  title="You can bet on us to  "
-                  highlight="deliver quality"
-                  description="Your fintech product shouldn’t look like a bad bet. Our BFSI testing services will make sure it doesn’t. We’ll test, push, and prod every bit to ensure it works perfectly, to inspire customer trust and loyalty. "
+                  title="Ship faster with"
+                  highlight="no compliance anxiety"
+                  description="Sit down with our FinTech QA expert to discuss your QA needs. No presentations, no six-meeting sales cycle. Just an honest conversation about where QA is slowing you down to see how we can help."
                   
-                  ctaLabel="Talk to an expert"
+                  ctaLabel="TALK TO A FINTECH QA EXPERT"
                   ctaHref="/how-we-work"
                 />
                 

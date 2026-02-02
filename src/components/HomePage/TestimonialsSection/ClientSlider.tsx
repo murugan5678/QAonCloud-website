@@ -15,33 +15,33 @@ const testimonials = [
 //     img: "/59-Kavitha Sivashankaran - G3 -.jpeg", // replace with your image path
 //   },
   {
-    text: "QAonCIoud has helped us detect app crashes which were affecting our downloads significantly. They have now taken the responsibility of giving a QA clear to all our development sprints. We would like to expand the team further.",
-    name: "Gautam Chakravarthy",
-    role: "Engineering Manager, Tokopedia",
+    text: "I like how proactive the testing team is in trying to find issues… I think that’s something we appreciate a lot, not just doing the job we ask for but going above and beyond.",
+    name: "Robert Johnson",
+    role: " Principal Software Engineer, AT&T Cybersecurity",
     img: "/Gautam Chakravarthy.jpg",
   },
   {
-    text: "QAonCloud is 40% more cost-effective than other options, the bugs also helped us make design optimization. The team has shown tremendous ownership, has done flawless delivery, and is a very quick learner.",
-    name: "Donald Le",
-    role: "Tech Director, AOL",
+    text: "QAonCloud more than exceeded our expectations! They’ve freed up a lot of time that we would previously spend trying to find the issues with our product, to spend it on actually resolving the issues that have been found.",
+    name: "Richard Crosby",
+    role: "Head of Engineering, Notabene",
     img: "Donald Le.jpg",
   },
   {
-    text: "QAonCloud are fantastic testing partners. They are diligent, pragmatic, and lovely to work with. They gel perfectly with our agile way of working and always happy to recommend better ways of doing things. Could not recommend them highly enough.",
-    name: "Toby Hunt",
-    role: "Chief Product Officer, Connectworxs",
+    text: "We’ve seen huge improvements in the stability of our app, and our developers can focus on their work, then work together with the QA team to fix and deploy a stable app.",
+    name: "Quentin Mussche",
+    role: "Head of Technology, Prompto",
     img: "Toby Hunt - Connectworxs.jpg", // replace with your image path
   },
   {
-    text: "QAonCloud helped us set up and formalise our testing from scratch and helped us deliver a great product to our first customers. Thanks for the great work!",
-    name: "Greg Adams",
-    role: "CEO, Stabilitas",
+    text: "The QAonCloud team was pretty independent, you can rely on them to do their work, and their communication, when needed, was pretty smooth.",
+    name: "Miguel Romero",
+    role: "Co-Founder and CTO, Netzo",
     img: "35-greg.jpg",
   },
   {
-    text: "QAonCloud beautifully integrates the QA outsourcing process. It is a transparent and reliable process that lets you focus on getting prompt delivery of QA results.",
-    name: "Shalini Gupta",
-    role: "Engineering Manager, Red Black Tree",
+    text: "We can fully rely on the testing results… we know the testing is done thoroughly and reliably… And when we tell the QAonCloud team to test something, our developers can focus on something else…",
+    name: "Alex Lipuntsov",
+    role: "Project Manager, IQ Hive",
     img: "Shalini Gupta.jpg",
   },
   {

@@ -6,26 +6,26 @@ export const FeatureGrid = () => {
   return (
     <div className={styles.grid}>
       <FeatureCard
-        title="We're built for your stage"
-        description="We're not your typical enterprise vendors. You are our priority, whether you're a 20-person startup or a global enterprise."
+        title="Much faster than hiring in-house"
+        description="Hiring, training and equipping an in-house QA team takes 6+ months. And when someone leaves, you’re left with coverage gaps and piling tasks.We’re productive in weeks, with zero recruiting costs or management overhead. With us, your QA coverage stays consistent, evolving with your product. "
         icon={<StarIcon />}
       />
 
       <FeatureCard
-        title="We're not a body shop"
-        description="We don’t offer up inexperienced resources and consider the job done. Our experts work with you from start to finish."
+        title="More reliable than offshore vendors"
+        description="Offshore QA is often synonymous with junior resources, constant supervision, and communication gaps. Quality remains questionable, and teams end up spending more time managing QA than ever. Our senior engineers become part of the team, learn your product, and own outcomes. No chaos, no hand-holding. Just quality you can trust."
         icon={<UserIcon />}
       />
 
       <FeatureCard
-        title="QA is our forte"
-        description="So, it doesn’t have to be your DIY project. Trust us to handle the testing while you focus on what you do best."
+        title="More effective than AI tools alone"
+        description="There’s a lot that AI testing tools can do. But they don’t understand users, edge cases, or what a bug signifies. You can’t call an algorithm when you’ve got a problem! There’s a lot that AI testing tools can do. But they don’t understand users, edge cases, or what a bug signifies. You can’t call an algorithm when you’ve got a problem!We combine AI-accelerated QA with senior engineers whose expertise offers context, optimizes prioritization, and ensures accountability. "
         icon={<CircleIcon />}
       />
 
       <FeatureCard
-        title="We do more than one-time audits"
-        description="We don’t just hand in our report and disappear. We stick with you until it ships."
+        title="More efficient than engineers on QA"
+        description="Every minute your engineers spend on QA is time they aren’t doing what they were hired to do. This puts a pause on feature delivery, slowing releases.Let your engineers do what they do best. Leave the testing to our specialists.  "
         icon={<ArrowIcon />}
       />
     </div>

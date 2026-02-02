@@ -10,15 +10,16 @@ export default function HeroContent() {
       </span>
 
       <h1>
-        Ship quickly and confidently, with every release
+        No chaos. No compromises. 
+        Just 40% faster QA.
       </h1>
 
       <p>
-        No slip-ups. No delays. No vendor chaos. Just reliable software testing servicesAre production bugs ruining your weekends? Every release shouldn’t be a nightmare, with new issues surfacing at every turn.
+        Accelerated by AI, steered by product experts, our QA software testing services deliver unmatched quality, just 2X faster.
       </p>
-      <p>
+      {/* <p>
         At QAonCloud, we know that quality isn’t luck; it’s smart, relentless QA testing. We’re a trusted software testing company that businesses like yours trust to ensure faster releases and fewer bugs, without the hassle of hiring, firefighting, or babysitting vendors.
-      </p>
+      </p> */}
 
       <div className={styles.buttonContainer}>
         <Button href="/how-we-work" variant="primary">

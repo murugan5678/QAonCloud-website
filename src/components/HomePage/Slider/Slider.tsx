@@ -25,7 +25,7 @@ export default function ClientSlider() {
     <section className={classes.wrapper}>
   <div className={classes.container}>
     <h4 className={classes.heading}>
-      We’ve helped 60+ global teams ship with confidence
+      Trusted by global engineering teams
     </h4>
   </div>
 
