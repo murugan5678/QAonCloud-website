@@ -16,6 +16,7 @@ import { ContentWrapper } from "@/components/Common/ContentWrapper/ContentWraper
 import HowWedeliver from "@/components/HomePage/HowDoWeDeliver/Howwedeliver";
 
 
+
 export default function Home() {
   return (
     <div>

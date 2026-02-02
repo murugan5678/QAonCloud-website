@@ -36,89 +36,126 @@ export default function page() {
                   highlight="cut above the rest"
                   features={[
                     {
-                      title: "Deep Fintech Domain Expertise",
+                      title: "Compliance is relentless",
                       description:
-                        "Our experience, proficiency in best practices and technical sophistication speaks for itself. ",
+                        "PCI-DSS, SOC 2, PSD2, state regulations. And they keep changing. Every release needs documented test coverage you can show auditors.",
                       icon: "star",
                     },
                     {
-                      title: "Accelerated time-to-market",
+                      title: "Security testing isn't optional",
                       description:
-                        "We’ll keep it simple, quick, and hassle-free, working alongside your development teams.",
+                        "Let’s face it, you developers didn't sign up to write test scripts. But they spend 20-30% of their time testing, when they should be building features.",
                       icon: "user",
                     },
                     {
-                      title: "No Compromises on Quality",
+                      title: "Audit prep is a fire drill",
                       description:
-                        "Robust tools, dynamic work model, and modern software testing approach",
+                        "When auditors ask for test documentation, scrambling to recreate it is a red flag. You need records that exist before anyone asks.",
                       icon: "circle",
                     },
-                    {
-                      title: "Value for Money",
-                      description:
-                        "Unmatched, high-level QA expertise at a fraction of the cost, ensuring accuracy, speed, and reliability",
-                      icon: "arrow",
-                    },
-                    {
-                      title: "Tailored to your needs.",
-                      description:
-                        "Ensuring products are intuitive, user-friendly, with user-oriented functionalities, reducing churn.",
-                      icon: "arrow",
-                    },
+                    // {
+                    //   title: "Value for Money",
+                    //   description:
+                    //     "Unmatched, high-level QA expertise at a fraction of the cost, ensuring accuracy, speed, and reliability",
+                    //   icon: "arrow",
+                    // },
+                    // {
+                    //   title: "Tailored to your needs.",
+                    //   description:
+                    //     "Ensuring products are intuitive, user-friendly, with user-oriented functionalities, reducing churn.",
+                    //   icon: "arrow",
+                    // },
                   ]}
                 />
-                <QualityTestingServices title="Services  "
-                  highlight="We Offer"
+                <SmoothReleases
+                  title="QA that keeps up with "
+                  highlight="releases and regulations"
+                  features={[
+                    {
+                      title: "Compliance built in, not bolted on",
+                      description:
+                        "Automated compliance reporting and test coverage documentation is audit-ready by default. So, no more scrambling when regulators call",
+                      icon: "star",
+                    },
+                    {
+                      title: "Security testing from day one",
+                      description:
+                        "Security isn’t a final step. It's embedded in every test cycle, every release, every deployment.",
+                      icon: "user",
+                    },
+                    {
+                      title: "Engineers who speak FinTech fluently",
+                      description:
+                        "Our experts have seen it all - payment processors, neobanks, and trading platforms. Your edge cases won’t break us.",
+                      icon: "circle",
+                    },
+                    // {
+                    //   title: "Value for Money",
+                    //   description:
+                    //     "Unmatched, high-level QA expertise at a fraction of the cost, ensuring accuracy, speed, and reliability",
+                    //   icon: "arrow",
+                    // },
+                    // {
+                    //   title: "Tailored to your needs.",
+                    //   description:
+                    //     "Ensuring products are intuitive, user-friendly, with user-oriented functionalities, reducing churn.",
+                    //   icon: "arrow",
+                    // },
+                  ]}
+                />
+                
+                <QualityTestingServices title="We work well with "
+                  highlight="FinTech teams"
                   services={[
                     {
-                      title: "360° App Testing",
+                      title: "Discovery call",
                       description:
-                        "Talk about total coverage! Keeps every feature, integration, and transaction running smoothly.",
+                        "We learn your product, your compliance requirements, and where QA is slowing you down. No sales pitch, no fuss, just an honest conversation",
                       learnMoreHref: "/services/functional-testing",
                       icon: "code",
                     },
                     {
-                      title: "Functional Testing",
+                      title: " A focused Pilot",
                       description:
-                        "Ensures every payment, login, and feature works as expected, every single time.",
+                        "We’ll start with a focused 1-month engagement. You’ll know we’re a fit, when you see 40% faster releases. ",
                       learnMoreHref: "/services/functional-testing",
                       icon: "bolt",
                     },
                     {
-                      title: "Data Integrity Testing",
+                      title: " Scale together",
                       description:
-                        "Guarantees financial data stays accurate, consistent, and untampered, from start to finish.",
+                        "We’ll grow with your product. More surfaces, more test coverage, more ownership. And the same, reliable team that sticks with you. ",
                       learnMoreHref: "/services/functional-testing",
                       icon: "arrow",
                     },
-                    {
-                      title: "Performance Testing",
-                      description:
-                        "Ensures your platform is fast, stable, and responsive, even during peak transaction volumes.",
-                      learnMoreHref: "/services/functional-testing",
-                      icon: "robot",
-                    },
-                    {
-                      title: "Regulatory Compliance Testing",
-                      description:
-                        "Keeps an eye on compliance! Helps you meet regulatory demands with confidence, with no delays. ",
-                      learnMoreHref: "/services/functional-testing",
-                      icon: "shield",
-                    },
-                    {
-                      title: "Security Testing",
-                      description:
-                        "Safeguards transactions and sensitive data, keeping things secure and trustworthy.",
-                      learnMoreHref: "/services/functional-testing",
-                      icon: "mobile",
-                    },
-                    {
-                      title: "Regression Testing",
-                      description:
-                        "Safeguards what already works, ensuring new updates don’t break critical financial flows.",
-                      learnMoreHref: "/services/functional-testing",
-                      icon: "mobile",
-                    },
+                    // {
+                    //   title: "Performance Testing",
+                    //   description:
+                    //     "Ensures your platform is fast, stable, and responsive, even during peak transaction volumes.",
+                    //   learnMoreHref: "/services/functional-testing",
+                    //   icon: "robot",
+                    // },
+                    // {
+                    //   title: "Regulatory Compliance Testing",
+                    //   description:
+                    //     "Keeps an eye on compliance! Helps you meet regulatory demands with confidence, with no delays. ",
+                    //   learnMoreHref: "/services/functional-testing",
+                    //   icon: "shield",
+                    // },
+                    // {
+                    //   title: "Security Testing",
+                    //   description:
+                    //     "Safeguards transactions and sensitive data, keeping things secure and trustworthy.",
+                    //   learnMoreHref: "/services/functional-testing",
+                    //   icon: "mobile",
+                    // },
+                    // {
+                    //   title: "Regression Testing",
+                    //   description:
+                    //     "Safeguards what already works, ensuring new updates don’t break critical financial flows.",
+                    //   learnMoreHref: "/services/functional-testing",
+                    //   icon: "mobile",
+                    // },
                   ]} 
                 />
                 <Partnerships
